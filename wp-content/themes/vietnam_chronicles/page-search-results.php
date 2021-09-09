@@ -6,7 +6,7 @@
       <div class="w-row">
         <div class="w-col w-col-10">
           <div class="form-block-6 w-form">
-            <form id="email-form-4" name="email-form-4" data-name="Email Form 4" class="search-form search-results-searhc-form form-search-posts" method="GET" action="http://localhost/vietnamchronicles.com/search-results/">
+            <form id="email-form-4" name="email-form-4" data-name="Email Form 4" class="search-form search-results-searhc-form form-search-posts" method="GET" action="<?php echo get_site_url() ?>/search-results/">
               <input type="text" class="search-box w-input" maxlength="256" name="query" data-name="Name 3" id="input_search_query">
             </form>
             <div class="w-form-done">

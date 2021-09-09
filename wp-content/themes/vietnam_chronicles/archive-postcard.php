@@ -1,8 +1,12 @@
   <?php get_header() ?>
-  <div data-w-id="6061e404-14f7-89e6-4a4b-89c3d17c5b07" class="div-block-31 main-section">
-    <div data-w-id="eb526739-0925-9d30-682a-07e009164873" class="postcard-modal">
-      <h3 class="heading-62 postcard-title"><strong class="bold-text-3">Postcard of Hanoi</strong></h3>
-      <img src="" width="724"  sizes="100vw" alt="" class="image-10">
+  <div class="div-block-31 main-section postcard-modal__wrapper">
+    <div class="postcard-modal">
+      <span class='postcard-topbar'><i class='fa fa-close fa-2x close-icon'></i></span>
+      <h2 class="heading-62 postcard-heading"><span class="postcard-title">Postcard of Hanoi</span></h2>
+      <div class='postcard__image-box'>
+          <i class="fa fa-angle-left fa-3x left-arrow postcard-navigation" aria-hidden="true"></i>
+          <img src="" width="724"  sizes="100vw" alt="" class="image-10">
+          <i class="fa fa-angle-right fa-3x right-arrow postcard-navigation" aria-hidden="true"></i></div>
       <p class="paragraph-18 modal-postcard-content"></p>
       <h4 class="heading-63">Pictures From Top Clockwise:</h4>
       <ol class="list-4 modal-postcard-parts">
@@ -22,9 +26,13 @@
       <?php
         $args =array('post_type' => 'postcard', 'posts_per_page' => -1);
         $loop = new WP_Query( $args );
-        $i = 0;
-        $count = wp_count_posts( "postcard" )->publish;
-        ?> 
+      ?> 
+        <script>
+            let postcardObject;
+            let postcardArray = new Array();
+            let postcardArrayStr;
+            localStorage.setItem("postcardArray", JSON.stringify(postcardArray));
+        </script>
         <div class='postcard_grid'>
         <?php while( $loop->have_posts() ): 
           $loop->the_post();
@@ -32,18 +40,29 @@
           <div class="m-10 postcard-container image-postcard postcard-card postcard_animation" data-postcard-id='<?php the_ID() ?>'>
             <img src=<?php echo get_field('postcard-image') ?>  alt="" class="image-postcard link-image">
             <h4 class="link-heading postcard_heading"><?php the_title() ?></h4>
-            <div class="postcard-content" hidden><?php the_content() ?></div>
-              <p class="postcard-parts" hidden><?php echo get_field('postcard_parts')  ?></p>
             </div>
           <a href=<?php the_permalink() ?> class="m-10 postcard-container image-postcard postcard-card postcard_link">
            <div class="m-10 postcard-container" data-postcard-id='<?php the_ID() ?>'>
               <img src=<?php echo get_field('postcard-image') ?>  alt="" class="image-postcard link-image">
               <h4 class="link-heading postcard_heading"><?php the_title() ?></h4>
-              <div class="postcard-content" hidden><?php the_content() ?></div>
-              <p class="postcard-parts" hidden><?php echo get_field('postcard_parts')  ?></p>
             </div>
         </a>
-        <?php endwhile; ?>              
+        <script>
+            postcardObject = {
+                id: '<?php the_ID() ?>',
+                imageUrl: '<?php echo get_field('postcard-image') ?>',
+                title: '<?php echo strip_tags(the_title()) ?>',
+                content: `<?php echo strip_tags(the_content()) ?>`,
+                parts: `<?php echo strip_tags(get_field('postcard_parts'))  ?>`,
+                permalink: '<?php the_permalink() ?>'
+            }
+            
+            postcardArrayStr = localStorage.getItem("postcardArray");
+            postcardArray = JSON.parse(postcardArrayStr);
+            postcardArray.push(postcardObject);
+            localStorage.setItem("postcardArray", JSON.stringify(postcardArray));
+        </script>
+        <?php endwhile; ?>
       </div>
     </div>
   </div>

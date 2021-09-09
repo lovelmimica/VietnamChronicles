@@ -10,7 +10,7 @@
         <hr>
       </div>
       <?php 
-        $args =array('post_type' => 'post', 'cat' => the_category_ID(false), 'posts_per_page' => -1 );
+        $args =array('post_type' => 'post', 'category_name' => get_queried_object()->slug, 'posts_per_page' => -1 );
         $loop = new WP_Query( $args );
         ?>
         <div class='postcard_grid'>
@@ -20,7 +20,7 @@
           ?>
           <div class="archive-post-card p-10">
             <a href=<?php the_permalink() ?>>
-            <img class='link-image card-image' src=<?php echo get_field('featured_image')['url']  ?> alt=<?php echo get_field('featured_image')['alt'] ?> />
+            <img class='link-image card-image' src=<?php echo get_field('featured_image') ?> alt="Featured image" />
             <h4 class="link-heading"><?php the_title() ?></h4></a>
             <hr>
             <p><?php echo get_the_excerpt() ?></p>

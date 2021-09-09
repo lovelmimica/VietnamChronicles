@@ -1,26 +1,71 @@
 window.onload = function(){
-
-    jQuery(".postcard-card").on("click", function(){
-        var id = jQuery(this).find(".postcard-container").attr("data-postcard-id");
-        var title = jQuery(this).find(".link-heading").text();
-        var img_src = jQuery(this).find("img").attr("src");
-        var content = jQuery(this).find(".postcard-content p").text();
-        var postcard_parts = jQuery(this).find(".postcard-parts").text();
-
-        var postcard_parts_arr = postcard_parts.split('.');
-        console.log(postcard_parts_arr);
-
+    
+    function populatePostcardModal(id){
+        localStorage.setItem("activePostcardId", id);
+        
+        const postcardArrayStr = localStorage.getItem("postcardArray");
+        const postcardArray = JSON.parse(postcardArrayStr);
+        
+        const activePostcard = postcardArray.find(element => element.id == id);
+        
+        const postcardPartsArray = activePostcard.parts.split('.');
+        const title = activePostcard.title;
+        const content = activePostcard.content.replace(/<[^>]+>/g, '');
+        const imageUrl = activePostcard.imageUrl;
+        
+        jQuery(".postcard-modal .postcard-title").text(title);
+        jQuery(".postcard-modal img").attr("src", imageUrl);
+        jQuery(".postcard-modal .modal-postcard-content").text(content);
         jQuery(".postcard-modal .modal-postcard-parts").empty();
-
-        postcard_parts_arr.forEach(element => {
+        postcardPartsArray.forEach(element => {
             if(element.length > 2) jQuery(".postcard-modal .modal-postcard-parts").append('<li>' + element + '</li>');
         });
+    }
 
-        jQuery(".postcard-modal .postcard-title").text(title);
-        jQuery(".postcard-modal img").attr("src", img_src);
-        jQuery(".postcard-modal .modal-postcard-content").text(content);
-        //jQuery(".postcard-modal .modal-postcard-parts").text(postcard_parts);        
+    jQuery(".postcard-card").on("click", function(){
+        let postcardArrayStr = localStorage.getItem("postcardArray");
+        let postcardArray = JSON.parse(postcardArrayStr); 
+        
+        var id = jQuery(this).attr("data-postcard-id");
+        
+        populatePostcardModal(id);
+        jQuery(".div-block-31").css("display", "flex");
+        jQuery(".div-block-31 .postcard-modal").addClass('w3-animate-top');
     });
+    
+    jQuery(".postcard-modal .postcard-topbar .close-icon").on('click', () => {
+        jQuery(".div-block-31").css("display", "none");
+    });
+    
+    jQuery(".postcard-modal .postcard-navigation.right-arrow").on("click", () => {
+        const currentId = localStorage.getItem("activePostcardId");
+        const postcardArrayStr = localStorage.getItem("postcardArray");
+        const postcardArray = JSON.parse(postcardArrayStr);
+        
+        let index = postcardArray.findIndex(element => element.id == currentId);
+        
+        index == (postcardArray.length - 1) ? index = 0 : index++;
+        
+        const nextId = postcardArray[index].id;
+        
+        populatePostcardModal(nextId);
+        
+    });
+    
+    jQuery(".postcard-modal .postcard-navigation.left-arrow").on("click", () => {
+       const currentId = localStorage.getItem("activePostcardId");
+       const postcardArrayStr = localStorage.getItem("postcardArray");
+       const postcardArray = JSON.parse(postcardArrayStr);
+        
+       let index = postcardArray.findIndex(element => element.id == currentId);
+        
+       index == 0 ? index = (postcardArray.length - 1) : index--;
+        
+       const previousId = postcardArray[index].id;
+        
+       populatePostcardModal(previousId);
+    });
+    
     //try to use promises in form submiting
     jQuery('.search-icon').on('click', () => {
         jQuery('#search_form').submit();
@@ -79,7 +124,6 @@ window.onload = function(){
         console.log("klik 2");
 
         if(input_email.includes("@")){
-            console.log("klik");
             jQuery("#contact-us-form").ajaxSubmit();
             jQuery("#contact-us-form")[0].reset();
 
@@ -100,7 +144,7 @@ window.onload = function(){
             jQuery(".search_result_container").append(`<div class="cetered-vertical w-col w-col-4 search_results_item">
             <div class="archive-post-card p-10 search_result_post_card">
               <a href="${search_results[i].permalink}">
-                <img src="${search_results[i].featured_image}" width="300" alt="" class="link-image">
+                <img src="${search_results[i].featured_image}" width="300" alt="Featured image" class="link-image">
                 <h4 class="link-heading">${search_results[i].title}</h4>
               </a>
               <hr>
@@ -116,7 +160,7 @@ window.onload = function(){
         query = urlParams.get('query');
 
         jQuery.ajax({
-            url: "http://localhost/vietnamchronicles.com/wp-json/vnc/v1/search-posts?query=" + query,       
+            url: "https://vietnamchronicles.com/wp-json/vnc/v1/search-posts?query=" + query,       
         }).done(function(res){
             search_results = res;
             present_results(search_results, query);
@@ -127,7 +171,7 @@ window.onload = function(){
         if( query.length >= 2 ) {
 
             jQuery.ajax({
-                url: "http://localhost/vietnamchronicles.com/wp-json/vnc/v1/search-posts?query=" + query,       
+                url: "https://vietnamchronicles.com/wp-json/vnc/v1/search-posts?query=" + query,       
             }).done(function(res){
                 search_results = res;
                 present_results(search_results, query);
@@ -184,13 +228,13 @@ window.onload = function(){
             );
           });
 
-          let slider_counter = 3001;
-          let slider_images = ['http://localhost/vietnam_chronicles/wp-content/themes/vietnam_chronicles/images/slider_00.jpg', 'http://localhost/vietnam_chronicles/wp-content/themes/vietnam_chronicles/images/slider_01.jpg', 'http://localhost/vietnam_chronicles/wp-content/themes/vietnam_chronicles/images/slider_02.jpg'];
+          /*let slider_counter = 3001;
+          let slider_images = ['https://vietnamchronicles.com/wp-content/themes/vietnam_chronicles/images/slider_00.jpg', 'https://vietnamchronicles.com/wp-content/themes/vietnam_chronicles/images/slider_01.jpg', 'https://vietnamchronicles.com/wp-content/themes/vietnam_chronicles/images/slider_02.jpg'];
           
           function sliderLeft(){
             let current_image = slider_counter % 3;
             slider_counter++;
-            let new_mage =  "<img class='w3-animate-right slider_image' src=" + slider_images[current_image] + " />";
+            let new_image =  "<img class='w3-animate-right slider_image' src=" + slider_images[current_image] + " />";
 
 
             jQuery('.slider_prim-img').removeClass('w3-animate-left');
@@ -200,16 +244,13 @@ window.onload = function(){
             jQuery('.slider_second-img').addClass('w3-animate-right');
 
             jQuery('.slider_image').remove();
-            jQuery('.slider_image-wrapper').append(new_mage);
-
-            //jQuery('.slider_prim-img').toggle();
-            //jQuery('.slider_second-img').toggle();
+            jQuery('.slider_image-wrapper').append(new_image);
           }
 
           function sliderRight(){
             let current_image = slider_counter % 3;
             slider_counter--;
-            let new_mage =  "<img class='w3-animate-right slider_image' src=" + slider_images[current_image] + " />";
+            let new_image =  "<img class='w3-animate-right slider_image' src=" + slider_images[current_image] + " />";
 
             jQuery('.slider_prim-img').removeClass('w3-animate-right');
             jQuery('.slider_second-img').removeClass('w3-animate-right');
@@ -218,12 +259,7 @@ window.onload = function(){
             jQuery('.slider_second-img').addClass('w3-animate-left');
 
             jQuery('.slider_image').remove();
-            jQuery('.slider_image-wrapper').append(new_mage);
-
-            /*
-            jQuery('.slider_prim-img').toggle();
-            jQuery('.slider_second-img').toggle();
-            */
+            jQuery('.slider_image-wrapper').append(new_image);
           }
 
           jQuery('.slider-arrow.left').on('click', () => {
@@ -236,47 +272,25 @@ window.onload = function(){
 
           this.setInterval(function(){
               console.log("Changing main slider image");
-
                 sliderLeft();
-              //jQuery('.slider_second-img').addClass('w3-animate-right');
-
-          }, 3000);
+          }, 3000);*/
     }
 
     if(jQuery("meta[name='single'").attr("content")){
-        console.log("Single post is loaded");
-        jQuery('.content_link').each( (i, obj) => {
-            let heading = jQuery(obj).text().trim();
-            let pos = jQuery('.single_post_content h2:contains(' + heading + ')').position() || jQuery('.single_post_content h3:contains(' + heading + ')').position();
-            let position = pos.top;
-            let content_position = jQuery('.single_post_content').position().top;
-            jQuery(obj).on('click', () => {
-                window.scrollTo(0, content_position + position);
-            });
-        });
         jQuery(window).scroll(function(){
             if(jQuery(window).scrollTop() > 300) {
-                console.log("Showing to top button");
                 jQuery(".div-to-top").css("opacity", 100);
             }else{
-                console.log("Hiding to top button");
                 jQuery(".div-to-top").css("opacity", 0);
             }
         });
-
-        jQuery(".button-to-top").on("click", function(){
-            //jQuery('.body ').scrollTop();
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        });
-
     }
 
     jQuery(".vnc-navigtion-btn").on("click", function(){
         jQuery(".navigation-menu").toggle();
     });
 
-    jQuery("body").on("click", function(){
+    function closeAllSubmenus(){
         if( jQuery(".vnc-navigtion-btn").hasClass("w--open") ){
             jQuery(".navigation-menu").hide();
         };
@@ -284,14 +298,17 @@ window.onload = function(){
         jQuery(".navigation-submenu-countries").css("display", "none");
         jQuery(".navigation-submenu-vietnam").css("display", "none");
         jQuery(".navigation-subsubmenu-destinations").css("display", "none");
-    });
+    }
+
+    jQuery("body").on("click", closeAllSubmenus);
 
     jQuery(".expandable-item-countries").hover( function(){
-        console.log("Expand start");
-        let position = jQuery(".expandable-item-countries").position();
-        jQuery(".navigation-submenu").css('margin-left', position.left);
+        let offsetLeft = jQuery(".expandable-item-countries").offset();
+        jQuery(".navigation-submenu").css('left', offsetLeft.left);
+        let offsetTop = jQuery('.header').height();
+        jQuery(".navigation-submenu").css('top', offsetTop);
+        console.log(offsetTop);
         jQuery(".navigation-submenu-countries").css("display", "flex");
-        console.log("Expand end");
         //jQuery(".navigation-submenu").slideDown();
     });
 
@@ -303,9 +320,14 @@ window.onload = function(){
         jQuery(".navigation-subsubmenu-destinations").css("display", "flex");
     });
 
-    /*jQuery(".main-section").mouseenter(function(){
-        jQuery(".navigation-submenu").css("display", "none");
-    });*/
+    var timeout = null;
+
+    jQuery(this.document).on('mousemove', function(){
+        if(jQuery('.header_wrapper:hover').length == 0 && jQuery('.navigation-submenu:hover').length == 0){ 
+            closeAllSubmenus();
+        }
+
+    });
 
     jQuery(".expand-mobile-menu-vietnam").on('click', function(){
         jQuery(".menu-subitem").toggleClass("hidden");
@@ -327,5 +349,10 @@ window.onload = function(){
         jQuery('.button_expand-content').toggleClass('fa-minus');
 
         jQuery('.table_of_contents-body').slideToggle();
+    });
+    
+    jQuery('a.reply-button-wrapper').on('click', e => {
+       let selectedId = jQuery(e.currentTarget).data("id");
+       jQuery("#comment_parent").val(selectedId);
     });
 }

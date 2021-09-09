@@ -24,14 +24,16 @@
             'label' => 'Messages',
             'public' => true,
             'menu_icon' => 'dashicons-email-alt',
-            'has_archive' => false
+            'has_archive' => false,
+            'publicly_queryable'  => false
         ));
 
         register_post_type('post_rank_list', array(
             'label' => 'Post Rang Lists',
             'public' => true,
             'menu_icon' => 'dashicons-editor-ol',
-            'has_archive' => false
+            'has_archive' => false,
+            'publicly_queryable'  => false
         ));
     }
 
@@ -83,18 +85,19 @@
         $comment_author_email = $request["comment_author_email"];
         $comment_content = $request["comment_content"];
         $comment_post_ID = $request["comment_post_ID"];
+        $comment_parent = $request["comment_parent"];
 
         $args = array(
             "comment_author" => $comment_author,
             "comment_author_email" => $comment_author_email,
             "comment_content" => $comment_content,
             "comment_post_ID" => $comment_post_ID,
-            "comment_approved" => 0
+            "comment_approved" => 0,
+            "comment_type" => '',
+            "comment_parent" => $comment_parent
         );
 
         $id =  wp_insert_comment( $args );
-
-        //print_r( get_comments() );
 
         return $id;
     }

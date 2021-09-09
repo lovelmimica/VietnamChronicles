@@ -6,9 +6,9 @@
         <p class="paragraph-15 mds-plr-10">Do you have any questions about your upcoming Vietnam trip?<br></p>
         <p class="mds-plr-10">Don’t hesitate to hit that cute, green button below along with your message. We love when people reach us out and we make sure to answer every message personally. <br></p>
         <p class="mds-plr-10">Usually, it takes up to 48 hours for us to get back to you, but please forgive us if it takes a bit longer as sometimes we’re literally overwhelmed with your AWESOME messages. <br></p>
-        <div class="div-wide">
-          <p class="mds-plr-10">Let’s connect <br></p>
-          <div class="w-embed pt-5">&nbsp<i class="fa fa-smile-o fa-lg" aria-hidden="true"></i></div>
+        <div class="div-wide contact contact-page-content__bottom-paragraph">
+          <p class="mds-plr-10 contact-page-content__bottom-paragraph_text">Let’s connect <br></p>
+          <div class="w-embed pt-3">&nbsp<i class="fa fa-smile-o fa-lg" aria-hidden="true"></i></div>
         </div>
         <div class="html-embed-5 w-embed">
           <hr>
@@ -16,7 +16,7 @@
       </div>
       <div class="part-container main-section">
         <div class="form-block-4 w-form">
-          <form id="contact-us-form" name="contact-us-form" data-name="Email Form 2" class="form-3" method="GET" action='http://localhost/vietnamchronicles.com/wp-json/vnc/v1/create-message' >
+          <form id="contact-us-form" name="contact-us-form" data-name="Email Form 2" class="form-3" method="GET" action='<?php echo get_site_url() ?>/wp-json/vnc/v1/create-message' >
             <label for="name-3">Name</label>
             <input type="text" class="text-field-4 w-input" maxlength="256" name="sender_name" data-name="Name 3" id="name-3">
             <label for="email">Email Address</label>
@@ -26,9 +26,8 @@
             <label for="name-4">Message</label>
             <textarea placeholder="Message Text" maxlength="5000" id="msg_content" name="msg_content" required="" class="textarea w-input"></textarea>
             <div class="form-footer">
-            <div class="g-recaptcha" data-sitekey="6LfeHx4UAAAAAAKUx5rO5nfKMtc9-syDTdFLftnm"></div>
               <a href="#" class="link-btn w-inline-block contact-us-submit" style="opacity: 1;">
-                 <div class="text-button">Send</div>
+                 <div class="text-button">SEND</div>
               </a>              
             </div>
           </form>

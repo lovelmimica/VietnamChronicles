@@ -1,16 +1,16 @@
 <script>
-    window.location.replace("http://localhost/vietnamchronicles.com");
+    window.location.replace("<?php echo get_site_url() ?>");
 </script>
 <h2>INDEX.PHP</h2>
 
 <?php
 
 
-    $content = file("http://localhost/vietnamchronicles.com/wp-content/themes/vietnam_chronicles/xml_import/import.txt");
+    $content = file("<?php echo get_site_url() ?>/wp-content/themes/vietnam_chronicles/xml_import/import.txt");
 
     
 
-    //$posts = simplexml_load_file("http://localhost/vietnamchronicles.com/wp-content/themes/vietnam_chronicles/xml_import/import.xml");
+    //$posts = simplexml_load_file("<?php echo get_site_url() ?>/wp-content/themes/vietnam_chronicles/xml_import/import.xml");
 
    /* 
 

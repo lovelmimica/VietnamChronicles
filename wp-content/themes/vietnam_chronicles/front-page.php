@@ -1,35 +1,38 @@
   <?php get_header() ?>
   <div class="section-8 main-section main-section slider_section">
-    <div class="slider-arrow left">
-      <div class="icon-arrow w-embed main_slider_left"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></div>
-    </div>
-    <div class='slider_image-wrapper'>
-      <img class='w3-animate-right slider_image' src='http://localhost/vietnamchronicles.com/wp-content/themes/vietnam_chronicles/images/slider_00.jpg' />
-    </div>
-      <div class="slider-arrow right ">
-      <div class="icon-arrow w-embed main_slider_right"><i class="fa fa-angle-right fa-3x" aria-hidden="true"></i></div>
+      <div class='slider_image-wrapper'>
+        <!--<img class='slider_image' src='https://vietnamchronicles.com/wp-content/uploads/2020/12/vietnam-chronicles-banner.png' />-->
+        <img class='slider_image' src='https://vietnamchronicles.com/wp-content/uploads/2020/11/front-page-banner.jpg' />
+        <span class='front-page-title__wrapper'><h1 class='front-page-title'>EXPLORE VIBRANT INDOCHINA <br> WITH US</h1></span>
+        <div class="start-exploring-button-wrapper">
+            <a href="#section-countries" class="link-btn w-inline-block start-exploring-button-anchor" style="opacity: 1;">
+                <span class="text-button start-exploring-button">START HERE</span>
+            </a>
+        </div>
+      </div>
+  </div>
+    <div class='about_us'>
+      <h2>Hi, we're Antonio, David & Lovel!</h2>
+      <p>Welcome to our adventure travel blog. We have been travelling South East Asia since 2017, searching for the best destinations and adventures.</p>
+      <p>Through the art of storytelling and photography, we help our readers explore the globe with us, and aim to get you on the road as well. </p>
+      <a href="<?php echo get_site_url() ?>/about/" class="link-btn w-inline-block">
+        <div class="text-button">ABOUT US</div>
+      </a>
     </div>
   </div>
-  <div class="about_us">
-    <h2>Hi, we're Antonio, David & Lovel!</h2>
-    <p>Welcome to our adventure travel blog. We'we been travelling South East ASia since 2017, searching for the best destinations and adventures.</p>
-    <p>Trough the art of storytelling and photography, we help our readers explore the globe with us, and aim to get you on the road as well. </p>
-    <a href="http://localhost/vietnamchronicles.com/about/" class="link-btn w-inline-block">
-      <div class="text-button">ABOUT US</div>
-    </a>
-  </div>
+  <span id='section-countries'></span> 
   <div class="section container-main">
     <div class="container w-container">
       <div class="part-container">
         <div class="no-mp w-row">
-          <div class="cetered-vertical w-col w-col-4"><a class="destination_image" href="http://localhost/vietnamchronicles.com/category/laos/"><img src=<?php echo get_template_directory_uri() . "/images/laos.jpg" ?> srcset='<?php echo get_template_directory_uri() . "/images/laos-p-800.jpeg" ?> 800w, <?php echo get_template_directory_uri() . "/images/laos.jpg" ?> 960w' sizes="(max-width: 479px) 95vw, (max-width: 767px) 32vw, (max-width: 991px) 230.53125px, 297.6625061035156px" alt="" class="image-destination-left link-image"></a>
-            <a class='country-link' href="http://localhost/vietnamchronicles.com/category/laos/">Laos</a>
+          <div class="cetered-vertical w-col w-col-4"><a class="destination_image" href="<?php echo get_site_url() ?>/category/laos/"><img src=<?php echo get_template_directory_uri() . "/images/laos.jpg" ?> srcset='<?php echo get_template_directory_uri() . "/images/laos-p-800.jpeg" ?> 800w, <?php echo get_template_directory_uri() . "/images/laos.jpg" ?> 960w' sizes="(max-width: 479px) 95vw, (max-width: 767px) 32vw, (max-width: 991px) 230.53125px, 297.6625061035156px" alt="" class="image-destination-left link-image"></a>
+            <a class='country-link' href="<?php echo get_site_url() ?>/category/laos/">Laos</a>
           </div>
-          <div class="cetered-vertical w-col w-col-4"><a class="destination_image" href="http://localhost/vietnamchronicles.com/category/vietnam/"><img src=<?php echo get_template_directory_uri() . "/images/vietnam.jpeg" ?> srcset='<?php echo get_template_directory_uri() . "/images/vietnam-p-1080.jpeg" ?> 1080w, <?php echo get_template_directory_uri() . "/images/vietnam-p-1600.jpeg" ?> 1600w, <?php echo get_template_directory_uri() . "/images/vietnam.jpeg" ?> 2000w' sizes="(max-width: 479px) 95vw, (max-width: 767px) 32vw, (max-width: 991px) 230.53125px, 297.6625061035156px" alt="" class="image-destination-center link-image"></a>
-            <a class='country-link' href="http://localhost/vietnamchronicles.com/category/vietnam/">Vietnam</a>
+          <div class="cetered-vertical w-col w-col-4"><a class="destination_image" href="<?php echo get_site_url() ?>/category/vietnam/"><img src=<?php echo get_template_directory_uri() . "/images/vietnam.jpeg" ?> srcset='<?php echo get_template_directory_uri() . "/images/vietnam-p-1080.jpeg" ?> 1080w, <?php echo get_template_directory_uri() . "/images/vietnam-p-1600.jpeg" ?> 1600w, <?php echo get_template_directory_uri() . "/images/vietnam.jpeg" ?> 2000w' sizes="(max-width: 479px) 95vw, (max-width: 767px) 32vw, (max-width: 991px) 230.53125px, 297.6625061035156px" alt="" class="image-destination-center link-image"></a>
+            <a class='country-link' href="<?php echo get_site_url() ?>/category/vietnam/">Vietnam</a>
           </div>
-          <div class="cetered-vertical w-col w-col-4"><a class="destination_image" href="http://localhost/vietnamchronicles.com/category/cambodia/"><img src=<?php echo get_template_directory_uri() . "/images/cambodia.jpeg" ?> srcset='<?php echo get_template_directory_uri() . "/images/cambodia-p-800.jpeg" ?> 800w, <?php echo get_template_directory_uri() . "/images/cambodia.jpeg" ?>  960w' sizes="(max-width: 479px) 95vw, (max-width: 767px) 32vw, (max-width: 991px) 230.53125px, 297.6625061035156px" alt="" class="image-destination-right link-image"></a>
-            <a class='country-link' href="http://localhost/vietnamchronicles.com/category/cambodia/">Cambodia</a>
+          <div class="cetered-vertical w-col w-col-4"><a class="destination_image" href="<?php echo get_site_url() ?>/category/cambodia/"><img src=<?php echo get_template_directory_uri() . "/images/cambodia.jpeg" ?> srcset='<?php echo get_template_directory_uri() . "/images/cambodia-p-800.jpeg" ?> 800w, <?php echo get_template_directory_uri() . "/images/cambodia.jpeg" ?>  960w' sizes="(max-width: 479px) 95vw, (max-width: 767px) 32vw, (max-width: 991px) 230.53125px, 297.6625061035156px" alt="" class="image-destination-right link-image"></a>
+            <a class='country-link' href="<?php echo get_site_url() ?>/category/cambodia/">Cambodia</a>
           </div>
         </div>
       </div>
@@ -57,7 +60,7 @@
                 $loop->the_post();
                 ?>
                 <div class="archive-post-card p-10">
-                  <a href='<?php echo get_permalink(); ?>' ><img class='link-image card-image' src=<?php echo get_field('featured_image')['url']  ?> alt=<?php echo get_field('featured_image')['alt'] ?> />
+                  <a href='<?php echo get_permalink(); ?>' ><img class='link-image card-image' src=<?php echo get_field('featured_image')  ?> alt="Featured image" />
                   <h4 class="link-heading"><?php the_title() ?></h4></a>
                   <hr>
                   <p><?php echo get_the_excerpt() ?></p>
@@ -82,7 +85,7 @@
               while( $i < 3 ):
                 ?>
                 <div class="archive-post-card p-10">
-                <a href=<?php the_permalink($trending_posts[$i]) ?>><img class='link-image card-image' src=<?php echo get_field('featured_image', $trending_posts[$i])['url']  ?> alt=<?php echo get_field('featured_image',$trending_posts[$i])['alt'] ?> />
+                <a href=<?php the_permalink($trending_posts[$i]) ?>><img class='link-image card-image' src=<?php echo get_field('featured_image', $trending_posts[$i])  ?> alt="Featured image" />
                   <h4 class="link-heading"><?php echo get_the_title($trending_posts[$i]) ?></h4></a>
                   <hr>
                   <p><?php echo get_the_excerpt($trending_posts[$i]) ?></p>
@@ -107,7 +110,7 @@
               while( $i < 3 ):
                 ?>
                 <div class="archive-post-card p-10">
-                  <a href=<?php the_permalink($popular_posts[$i]) ?>><img class='link-image card-image' src=<?php echo get_field('featured_image', $popular_posts[$i])['url']  ?> alt=<?php echo get_field('featured_image', $popular_posts[$i])['alt'] ?> />
+                  <a href=<?php the_permalink($popular_posts[$i]) ?>><img class='link-image card-image' src=<?php echo get_field('featured_image', $popular_posts[$i])  ?> alt="Featured image" />
                   <h4 class="link-heading"><?php echo get_the_title($popular_posts[$i]) ?></h4></a>
                   <hr>
                   <p><?php echo get_the_excerpt($popular_posts[$i]) ?></p>
@@ -131,21 +134,21 @@
         <div class="no-mp w-row">
           <div data-w-id="d042aef2-057a-b411-a606-b0c6f763d96a" class="cetered-vertical no-mp w-col w-col-4" data-ix="new-interaction">
             <div class="position-relative">
-              <a href="http://localhost/vietnamchronicles.com/about/"><img src="http://localhost/vietnamchronicles.com/wp-content/uploads/2020/04/front_page.lovel_.jpeg" alt="Lovel" class="link-image image-member-left">
+              <a href="<?php echo get_site_url() ?>/about/"><img src="<?php echo get_site_url() ?>/wp-content/uploads/2020/04/front_page.lovel_.jpeg" alt="Lovel" class="link-image image-member-left">
             </a></div>
-            <a class='country-link' href="http://localhost/vietnamchronicles.com/about/">Lovel</a>
+            <a class='country-link' href="<?php echo get_site_url() ?>/about/">Lovel</a>
           </div>
           <div data-w-id="d042aef2-057a-b411-a606-b0c6f763d96b" class="cetered-vertical no-mp w-col w-col-4">
             <div class="position-relative">
-              <a href="http://localhost/vietnamchronicles.com/about/"><img src="http://localhost/vietnamchronicles.com/wp-content/uploads/2020/04/front_page.antonio.jpeg" alt="Antonio" class="link-image image-member-center">
+              <a href="<?php echo get_site_url() ?>/about/"><img src="<?php echo get_site_url() ?>/wp-content/uploads/2020/04/front_page.antonio.jpeg" alt="Antonio" class="link-image image-member-center">
             </a></div>
-            <a class='country-link' href="http://localhost/vietnamchronicles.com/about/">Antonio</a>
+            <a class='country-link' href="<?php echo get_site_url() ?>/about/">Antonio</a>
           </div>
           <div data-w-id="55f194f8-d976-4dc5-bbea-c2fcb6e77dbb" class="cetered-vertical no-mp w-col w-col-4">
             <div class="position-relative">
-              <a href="http://localhost/vietnamchronicles.com/about/"><img src="http://localhost/vietnamchronicles.com/wp-content/uploads/2020/04/front_page.david_.jpeg" alt="David" class="link-image image-member-right">
+              <a href="<?php echo get_site_url() ?>/about/"><img src="<?php echo get_site_url() ?>/wp-content/uploads/2020/04/front_page.david_.jpeg" alt="David" class="link-image image-member-right">
             </a></div>
-            <a class='country-link' href="http://localhost/vietnamchronicles.com/about/">David</a>
+            <a class='country-link' href="<?php echo get_site_url() ?>/about/">David</a>
           </div>
         </div>
       </div>
@@ -159,14 +162,14 @@
           <div class="column-25 w-col w-col-7">
             <p>Get the latest updates on our journey, motorbike routese, travel tips and everything in between!<br>‍<br>Let&#x27;s connect and share some interasting stories and experiences to inspire more people to travel around this stunning region!<br><br>Join our FREE weekly newsletter and get personalized itineraries and motorbike routes as well as countless travel tips!</p>
           </div>
-          <div class="column-17 w-col w-col-5 join_newsletter_image"><img src="<?php echo get_template_directory_uri() . "/images/newsletter.JPG" ?> width="338" srcset='<?php echo get_template_directory_uri() . "/images/newsletter-p-500.jpeg" ?> 500w, <?php echo get_template_directory_uri() . "/images/newsletter-p-1080.jpeg 1080w" ?>, <?php echo get_template_directory_uri() . "/images/newsletter-p-1600.jpeg" ?> 1600w, <?php echo get_template_directory_uri() . "/images/newsletter-p-2000.jpeg" ?> 2000w, <?php echo get_template_directory_uri() . "/images/newsletter-p-2600.jpeg" ?> 2600w, <?php echo get_template_directory_uri() . "/images/newsletter.JPG" ?> 2992w' sizes="(max-width: 479px) 92vw, (max-width: 767px) 47vw, (max-width: 991px) 283.3312683105469px, 338px" alt=""></div>
+          <div class="column-17 w-col w-col-5 join_newsletter_image"><img src="https://vietnamchronicles.com/wp-content/uploads/2020/09/newsletter_small.jpeg"  alt="Newsletter image"></div>
         </div>
       </div>
       <div class="part-container">
         <div class="no-mp w-row">
           <div class="column-25 w-col w-col-7">
             <div class="form-block w-form">
-              <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="form-2" method="GET" action="http://localhost/vietnamchronicles.com/wp-json/vnc/v1/create-subscriber">
+              <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="form-2" method="GET" action="<?php echo get_site_url() ?>/wp-json/vnc/v1/create-subscriber">
                 <input type="text" class="text-field-2 w-input" maxlength="256" name="subscriber_name" data-name="Name 3" placeholder="Name" id="name-3">
                 <input type="email" class="text-field-3 w-input" maxlength="256" name="subscriber_email" data-name="Email" placeholder="Email" id="email" required="">
               </form>
@@ -174,7 +177,7 @@
           </div>
           <div class="column-17 w-col w-col-5">
             <a href="#" class="link-btn w-inline-block form-subscription">
-              <div class="text-button">Join Now!</div>
+              <div class="text-button">JOIN NOW</div>
             </a>
           </div>
         </div>
@@ -189,18 +192,17 @@
         <hr>
       </div>
       <?php 
-        require 'vendor/autoload.php';
 
-        $json_ig_photos = file_get_contents("https://www.instagram.com/vietnamchronicles/?__a=1");
+        $json_ig_photos = file_get_contents("https://graph.instagram.com/17841409071052588/media?fields=id,media_url&access_token=[token]");
         $ig_photos_object = json_decode($json_ig_photos);
-        $ig_photos_list = $ig_photos_object->graphql->user->edge_owner_to_timeline_media->edges;
+        $ig_photos_list = $ig_photos_object->data;
         $ig_photo_urls = array();
         foreach($ig_photos_list as $item ){
-          array_push( $ig_photo_urls,$item->node->display_url );
+          array_push( $ig_photo_urls, $item->media_url );
         }
       ?>
-
-      <div class="part-container">
+        
+      <div class="part-container instagram-photo__section">
         <h2 class="heading-29">See our Photography</h2>
         <div class="div-block-42 ig_images_flexbox">
           <div class="div-block-43 ">
@@ -208,17 +210,17 @@
           </div>
           <div class="no-mp align-hor w-row ig_images_flexbox">
             <div class="p-10 cetered-vertical w-col w-col-4">
-              <a href="https://www.instagram.com/vietnamchronicles/"><div class="position-relative"><img src=<?php echo $ig_photo_urls[0] ?> alt="" class="link-instagram link-instagram-1">
+              <a href="https://www.instagram.com/vietnamchronicles/" target="_blank"><div class="position-relative"><img src='<?php echo $ig_photo_urls[0] ?>' alt="Instagram photo" class="link-instagram link-instagram-1">
                 <div class="image-text w-embed"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></div>
               </div></a>
             </div>
             <div class="p-10 cetered-vertical w-col w-col-4">
-              <a href="https://www.instagram.com/vietnamchronicles/"><div class="position-relative"><img src=<?php echo $ig_photo_urls[1] ?> alt="" class="link-instagram link-instagram-2">
+              <a href="https://www.instagram.com/vietnamchronicles/" target="_blank"><div class="position-relative"><img src='<?php echo $ig_photo_urls[1] ?>' alt="Instagram photo" class="link-instagram link-instagram-2">
                 <div class="image-text w-embed"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></div>
               </div></a>
             </div>
             <div class="p-10 cetered-vertical w-col w-col-4">
-            <a href="https://www.instagram.com/vietnamchronicles/"><div class="position-relative"><img src=<?php echo $ig_photo_urls[3] ?> alt="" class="link-instagram link-instagram-3">
+            <a href="https://www.instagram.com/vietnamchronicles/" target="_blank"><div class="position-relative"><img src='<?php echo $ig_photo_urls[3] ?>' alt="Instagram photo" class="link-instagram link-instagram-3">
                 <div class="image-text w-embed"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></div>
               </div></a>
             </div>
@@ -232,7 +234,7 @@
         <?php 
         $i = 0;
           foreach( $ig_photo_urls as $photo ): ?>
-            <a class='ig_images_grid_item' href="https://www.instagram.com/vietnamchronicles/"><img src=<?php echo $ig_photo_urls[$i] ?> alt="" class="link-instagram link-instagram-1"></a>
+            <a class='ig_images_grid_item' href="https://www.instagram.com/vietnamchronicles/" target="_blank"><img src=<?php echo $ig_photo_urls[$i] ?> alt="" class="link-instagram link-instagram-1"></a>
           <?php
             $i++;
           endforeach;

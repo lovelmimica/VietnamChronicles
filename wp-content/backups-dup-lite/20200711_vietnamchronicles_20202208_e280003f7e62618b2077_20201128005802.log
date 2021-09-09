@@ -1,0 +1,88 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: November 28, 2020 12:58 am
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.3.38
+WORDPRESS:	5.5.1
+PHP INFO:	7.3.24 | SAPI: litespeed
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (768M default) 
+MEMORY STACK: 10MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported
+SQL CREATED: 20200711_vietnamchronicles_20202208_e280003f7e62618b2077_20201128005802_database.sql
+SQL FILE SIZE: 15.51MB (16266471)
+SQL FILE TIME: 2020-11-28 00:58:13
+SQL RUNTIME: 4.07 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  /home/vietna14/public_html
+ARCHIVE FILE: 20200711_vietnamchronicles_20202208_e280003f7e62618b2077_20201128005802_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	1.01GB
+STATS:	Dirs 490 | Files 10,713
+SQL ADDED: 20200711_vietnamchronicles_20202208_e280003f7e62618b2077_20201128005802_database.sql
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 11203
+    [filename] => /home/vietna14/public_html/wp-content/backups-dup-lite/tmp/20200711_vietnamchronicles_20202208_e280003f7e62618b2077_20201128005802_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 11202
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 965.38MB
+ARCHIVE RUNTIME: 610.87 sec.
+MEMORY STACK: 14MB
+[PHP ERR][NOTICE] MSG:mysqli_query(): send of 6992 bytes failed with errno=32 Broken pipe [CODE:8|FILE:/home/vietna14/public_html/wp-includes/wp-db.php|LINE:2033]
+do_action('wp_ajax_duplicator_package_build'), WP_Hook->do_action, WP_Hook->apply_filters, duplicator_package_build, DUP_Package->runZipBuild, DUP_Archive->build, DUP_Package->setStatus, DUP_Package->update, wpdb->query, wpdb->_do_query, mysqli_query, DUP_Handler::error, DUP_Handler::getMessage
+[PHP ERR][WARN] MSG:Error while sending QUERY packet. PID=18943 [CODE:2|FILE:/home/vietna14/public_html/wp-includes/wp-db.php|LINE:2033]
+do_action('wp_ajax_duplicator_package_build'), WP_Hook->do_action, WP_Hook->apply_filters, duplicator_package_build, DUP_Package->runZipBuild, DUP_Archive->build, DUP_Package->setStatus, DUP_Package->update, wpdb->query, wpdb->_do_query, mysqli_query, DUP_Handler::error, DUP_Handler::getMessage
+building installer
+add_extra_files1
+add_extra_files2
+add_extra_files3
+add_extra_files4
+Doing archive file check
+add_extra_files5
+add_extra_files6
+add_extra_files8
+Successfully opened zip /home/vietna14/public_html/wp-content/backups-dup-lite/tmp/20200711_vietnamchronicles_20202208_e280003f7e62618b2077_20201128005802_archive.zip
+Adding enhanced installer files to archive using ZipArchive
+Installer files added to archive
+Added to archive
+After ziparchive close when adding installer
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 15.51MB
+INSTALLER FILE: 61.33KB
+ARCHIVE FILE: 966.94MB 
+EXPECTED FILE/DIRECTORY COUNT: 11,203
+ACTUAL FILE/DIRECTORY COUNT: 11,202
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[8]
+TOTAL PROCESS RUNTIME: 1188.55 sec.
+PEAK PHP MEMORY USED: 16MB
+DONE PROCESSING => 20200711_vietnamchronicles_20202208 November 28, 2020 1:17 am
+

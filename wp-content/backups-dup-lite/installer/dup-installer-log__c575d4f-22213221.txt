@@ -1,0 +1,670 @@
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 05:07:48
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.3.23 -- Build Server: 10.4.11
+FILE SIZE:	dup-database__[HASH].sql (13.59MB)
+TIMEOUT:	5000
+MAXPACK:	536870912
+SQLMODE:	ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/home/vietna14/public_html/dup-installer/dup-installer-data__[HASH].sql]
+COLLATE FB:	Off
+
+NOTICE: This servers version [10.3.23] is less than the build version [10.4.11].  
+If you find issues after testing your site please referr to this FAQ item.
+https://snapcreek.com/duplicator/docs/faqs-tech/#faq-installer-260-q
+[PHP ERR][WARN] MSG:count(): Parameter must be an array or an object that implements Countable [CODE:2|FILE:/home/vietna14/public_html/dup-installer/ctrls/ctrl.s2.dbinstall.php|LINE:392]
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	403
+
+wp_commentmeta: (6)
+wp_comments: (12)
+wp_duplicator_packages: (0)
+wp_links: (0)
+wp_options: (184)
+wp_pmxe_exports: (3)
+wp_pmxe_google_cats: (5371)
+wp_pmxe_posts: (192)
+wp_pmxe_templates: (0)
+wp_pmxi_files: (6)
+wp_pmxi_history: (3)
+wp_pmxi_images: (65)
+wp_pmxi_imports: (6)
+wp_pmxi_posts: (266)
+wp_pmxi_templates: (0)
+wp_postmeta: (2073)
+wp_posts: (545)
+wp_term_relationships: (678)
+wp_term_taxonomy: (257)
+wp_termmeta: (6)
+wp_terms: (257)
+wp_usermeta: (77)
+wp_users: (3)
+wp_wfblockediplog: (0)
+wp_wfblocks7: (0)
+wp_wfconfig: (249)
+wp_wfcrawlers: (0)
+wp_wffilechanges: (0)
+wp_wffilemods: (12166)
+wp_wfhits: (3)
+wp_wfhoover: (0)
+wp_wfissues: (0)
+wp_wfknownfilelist: (12170)
+wp_wflivetraffichuman: (0)
+wp_wflocs: (1)
+wp_wflogins: (3)
+wp_wfls_2fa_secrets: (0)
+wp_wfls_settings: (19)
+wp_wfnotifications: (2)
+wp_wfpendingissues: (0)
+wp_wfreversecache: (1)
+wp_wfsnipcache: (1)
+wp_wfstatus: (860)
+wp_wftrafficrates: (0)
+Removed '25' cache/transient rows
+
+INSERT DATA RUNTIME: 7.4800 sec.
+STEP-2 COMPLETE @ 05:07:55 - RUNTIME: 7.4984 sec.
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 05:08:10
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "Vietnam Chronicles"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "C:/xampp/htdocs/vietnamchronicles.com"
+path_new______________: "/home/vietna14/public_html"
+siteurl_______________: "https://vietnamchronicles.com"
+url_old_______________: "http://localhost/vietnamchronicles.com"
+url_new_______________: "https://vietnamchronicles.com"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: false
+cache_wp______________: false
+cache_path____________: false
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     6][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:    12][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   184][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_pmxe_exports"_________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_pmxe_google_cats"_____________________________[ROWS:  5371][PG:   2][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_pmxe_posts"___________________________________[ROWS:   192][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_pmxe_templates"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_pmxi_files"___________________________________[ROWS:     6][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_pmxi_history"_________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_pmxi_images"__________________________________[ROWS:    65][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_pmxi_imports"_________________________________[ROWS:     6][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_pmxi_posts"___________________________________[ROWS:   266][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_pmxi_templates"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:  2073][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:   545][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:   678][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:   257][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:     6][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:   257][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:    77][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_wfblockediplog"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfblocks7"____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfconfig"_____________________________________[ROWS:   249][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_wfcrawlers"___________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wffilechanges"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wffilemods"___________________________________[ROWS: 12166][PG:   4][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_wfhits"_______________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_wfhoover"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfissues"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfknownfilelist"______________________________[ROWS: 12170][PG:   4][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_wflivetraffichuman"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wflocs"_______________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_wflogins"_____________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_wfls_2fa_secrets"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfls_settings"________________________________[ROWS:    19][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_wfnotifications"______________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_wfpendingissues"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfreversecache"_______________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_wfsnipcache"__________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_wfstatus"_____________________________________[ROWS:   860][PG:   1][SCAN:text columns]
+	SEARCH  1:"C:/xampp/htdocs/vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  2:"C:\/xampp\/htdocs\/vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  3:"C%3A%2Fxampp%2Fhtdocs%2Fvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  4:"C:\xampp\htdocs\vietnamchronicles.com" ===========> "/home/vietna14/public_html"
+	SEARCH  5:"C:\\xampp\\htdocs\\vietnamchronicles.com" ========> "\/home\/vietna14\/public_html"
+	SEARCH  6:"C%3A%5Cxampp%5Chtdocs%5Cvietnamchronicles.com" ===> "%2Fhome%2Fvietna14%2Fpublic_html"
+	SEARCH  7:"//localhost/vietnamchronicles.com" ===============> "//vietnamchronicles.com"
+	SEARCH  8:"\/\/localhost\/vietnamchronicles.com" ============> "\/\/vietnamchronicles.com"
+	SEARCH  9:"%2F%2Flocalhost%2Fvietnamchronicles.com" =========> "%2F%2Fvietnamchronicles.com"
+	SEARCH 10:"http://vietnamchronicles.com" ====================> "https://vietnamchronicles.com"
+	SEARCH 11:"http:\/\/vietnamchronicles.com" ==================> "https:\/\/vietnamchronicles.com"
+	SEARCH 12:"http%3A%2F%2Fvietnamchronicles.com" ==============> "https%3A%2F%2Fvietnamchronicles.com"
+
+EVALUATE TABLE: "wp_wftrafficrates"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+--------------------------------------
+SCANNED:	Tables:44 	|	 Rows:35485 	|	 Cells:195793 
+UPDATED:	Tables:10 	|	 Rows:568 	|	 Cells:964 
+ERRORS:		0 
+RUNTIME:	1.177600 sec
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE DB_NAME ""vietna14_vietnamchronicles_db""
+	UPDATE DB_USER ""vietna14_lovel""
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	REMOVE WPCACHEHOME
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache '.htaccess__[HASH]' was removed
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+DEACTIVATE PLUGINS CHECK
+====================================
+Deactivated plugins list here: Array
+(
+    [0] => simple-google-recaptcha/simple-google-recaptcha.php
+    [1] => js_composer/js_composer.php
+)
+
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 05:08:11 - RUNTIME: 1.2112 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[INFO] No general notices
+	SECTIONS: general
+
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] No search and replace data errors
+	SECTIONS: search_replace
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+====================================

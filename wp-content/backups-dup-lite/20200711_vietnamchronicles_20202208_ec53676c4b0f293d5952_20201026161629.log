@@ -1,0 +1,84 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: October 26, 2020 4:16 pm
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.3.36
+WORDPRESS:	5.5
+PHP INFO:	7.2.34 | SAPI: litespeed
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (2G default) 
+MEMORY STACK: 12MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported
+SQL CREATED: 20200711_vietnamchronicles_20202208_ec53676c4b0f293d5952_20201026161629_database.sql
+SQL FILE SIZE: 15.53MB (16284329)
+SQL FILE TIME: 2020-10-26 16:16:45
+SQL RUNTIME: 4.04 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  /home/vietna14/public_html
+ARCHIVE FILE: 20200711_vietnamchronicles_20202208_ec53676c4b0f293d5952_20201026161629_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	1.03GB
+STATS:	Dirs 803 | Files 12,309
+SQL ADDED: 20200711_vietnamchronicles_20202208_ec53676c4b0f293d5952_20201026161629_database.sql
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 13112
+    [filename] => /home/vietna14/public_html/wp-content/backups-dup-lite/tmp/20200711_vietnamchronicles_20202208_ec53676c4b0f293d5952_20201026161629_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 13111
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 969.08MB
+ARCHIVE RUNTIME: 611.85 sec.
+MEMORY STACK: 16MB
+building installer
+add_extra_files1
+add_extra_files2
+add_extra_files3
+add_extra_files4
+Doing archive file check
+add_extra_files5
+add_extra_files6
+add_extra_files8
+Successfully opened zip /home/vietna14/public_html/wp-content/backups-dup-lite/tmp/20200711_vietnamchronicles_20202208_ec53676c4b0f293d5952_20201026161629_archive.zip
+Adding enhanced installer files to archive using ZipArchive
+Installer files added to archive
+Added to archive
+After ziparchive close when adding installer
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 15.53MB
+INSTALLER FILE: 61.33KB
+ARCHIVE FILE: 970.64MB 
+EXPECTED FILE/DIRECTORY COUNT: 13,112
+ACTUAL FILE/DIRECTORY COUNT: 13,111
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[7]
+TOTAL PROCESS RUNTIME: 1319.68 sec.
+PEAK PHP MEMORY USED: 18MB
+DONE PROCESSING => 20200711_vietnamchronicles_20202208 October 26, 2020 4:38 pm
+
