@@ -51,7 +51,7 @@ define( 'DB_USER', "vietna14_lovel" );
 
 /** MySQL database password */
 
-define( 'DB_PASSWORD', "Sabirnica1221" );
+define( 'DB_PASSWORD', "" );
 
 
 /** MySQL hostname */
